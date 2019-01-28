@@ -45,13 +45,6 @@ client3.on('message', message => {
     }
 });
 
-client3.on('message', message => {
-    if(message.content === 'aراتب'){
-        message.channel.send('#daily')
-    }
-});
-
-
 client4.on('message', message => {
     if(message.content === 'aمبلغ'){
         message.channel.send('#credits')
