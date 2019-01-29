@@ -82,7 +82,7 @@ if (message.content === 'aspam') {
 });
 
 client.on('message', message => {
-        var prefix = "a1";  // البريفكس
+        var prefix = "-";  // البريفكس
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
       
@@ -92,7 +92,7 @@ client.on('message', message => {
       
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
-        if(message.content.startsWith(prefix + 'say')) { // الامر
+        if(message.content.startsWith(prefix + 'asay')) { // الامر
             message.channel.send(''+x);
                 message.delete(999)
         }
@@ -101,7 +101,7 @@ client.on('message', message => {
       });
 
 client2.on('message', message => {
-        var prefix = "a2";  // البريفكس
+        var prefix = "#";  // البريفكس
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
       
@@ -111,7 +111,7 @@ client2.on('message', message => {
       
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
-        if(message.content.startsWith(prefix + 'say')) { // الامر
+        if(message.content.startsWith(prefix + 'asay')) { // الامر
             message.channel.send(''+x);
                 message.delete(999)
         }
